@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+"""
+File: updateMass.py
+Author: John Major
+Date: 2025-10-28
+Description:  This will change the column header and the values of the Mass
+in Neptune and Uransus
+"""
+
 # Uranus and Neptune mass where set to 1016 so that was changed to 1015
 from openpyxl import load_workbook
 import re

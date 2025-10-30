@@ -1,5 +1,12 @@
 #!/usr/bin/python3
-# read all files into one excel file
+"""
+File: readAllfiles.py
+Author: John Major
+Date: 2025-10-28
+Description:  Read all 4 files and place into allMoons.xlsx and insert 
+the planet name of the moon
+"""
+
 from openpyxl import load_workbook
 import re
 import pandas as pd

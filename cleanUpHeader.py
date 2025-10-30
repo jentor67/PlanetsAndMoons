@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-# this was specific to Jupiter's column titles and fix them
-# at the end I just copied another title onto it
+"""
+File: cleanUpHeader.py
+Author: John Major
+Date: 2025-10-28
+Description:  This will clean up the header row of the excel files
+"""
+
 from openpyxl import load_workbook
 import re
 
@@ -21,7 +26,8 @@ def editLineOne(ExcelFile):
         
         # You can then get or set its value
         cell_value = cell_object.value
-        cell_value = re.sub(r"\[.*?\]", "", cell_value)
+        cell_value = re.sub(r"\[.*?\]", "", cell_value) # remove between []
+        cell_value = cell_value.strip()
         cell_object.value = cell_value
 
     
@@ -30,3 +36,6 @@ def editLineOne(ExcelFile):
 
 
 editLineOne("jupiter.xlsx")
+editLineOne("saturn.xlsx")
+editLineOne("uranus.xlsx")
+editLineOne("neptune.xlsx")

@@ -1,6 +1,11 @@
 #!/usr/bin/python3
-# this program cleans up approxamate symbol and parenthese in 
-# major amounts
+"""
+File: cleanAll001.py
+Author: John Major
+Date: 2025-10-28
+Description:  update values and clean up extraneous marks
+"""
+
 from openpyxl import load_workbook
 import re
 
