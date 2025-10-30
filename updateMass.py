@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# Uranus and Neptune mass where set to 1016 so that was changed to 1015
 from openpyxl import load_workbook
 import re
 

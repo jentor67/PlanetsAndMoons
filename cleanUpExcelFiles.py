@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# this was specific to Jupiter's column titles and fix them
+# at the end I just copied another title onto it
 from openpyxl import load_workbook
 import re
 

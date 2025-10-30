@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# this list all the column name to check for uniformaty
 from openpyxl import load_workbook
 import re
 
